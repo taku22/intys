@@ -1,0 +1,754 @@
+@charset "UTF-8";
+
+/*
+reset.css
+*/
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #001360;
+  background-color: #fff;
+  font-family: 'Crimson Text', serif;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #001360;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0;
+}
+
+h1 {
+  margin: 0 0;
+}
+
+
+/*
+index.htmlのクラス
+*/
+
+.header {
+  width: 100%;
+  height: 500px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+.inner {
+  margin: 0 70px;
+  height: 100%;
+}
+
+.navigation-container {
+  background-color: #fff;
+  padding: 20px 20px 0 20px;
+  margin-right: 10px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 1px rgba(0, 0, 0, .4);
+
+}
+
+.navigation-logo {
+  display: inline;
+}
+
+.navigation-logo-intys {
+  display: inline;
+  height: 50px;
+}
+
+.navigation-inner {
+  float: right;
+  margin-right: 50px;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 20px;
+  font-family: 'Crimson Text', serif;
+}
+
+.nav-item a {
+  font-size: 3rem;
+}
+
+.drawer {
+  display: none;
+}
+
+.fa-twitter {
+  content: '\f099';
+  font-family: 'FontAwesome 5 Brands';
+  font-weight: 900;
+}
+
+.icon-twitter {
+  font-size: 2rem;
+}
+
+.icon-twitter::before {
+  content: '\f099';
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.section-title {
+  padding-top: 50px;
+}
+
+.servise-title,
+.works-title,
+.blog-title,
+.contact-title {
+  font-size: 4rem;
+  font-family: 'Crimson Text', serif;
+}
+
+.servise {
+  width: 100%;
+  height: 500px;
+}
+
+.servise-wrapper {
+  display: table;
+  margin: 50px auto 0 auto;
+  border-collapse: separate;
+  border-spacing: 30px 5px;
+  table-layout: fixed;
+}
+
+.servise-box {
+  display: table-cell;
+  text-align: center;
+}
+
+.servise-name {
+  font-size: 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 20px;
+}
+
+.servise-text {
+  font-size: 1.7rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 10px;
+}
+
+.servise-title {
+  padding-top: 30px;
+}
+
+.Works-title {
+  padding-top: 30px;
+}
+
+.ajust-font {
+  letter-spacing: -5px;
+}
+
+.blog-title {
+  padding-top: 30px;
+}
+
+.works {
+  width: 100%;
+  height: 350px;
+}
+
+.works-inner {
+  text-align: center;
+  height: 100%;
+}
+
+.works-title {
+  text-align: left;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-link {
+  background-color: grey;
+  margin: 0 auto 50px auto;
+  width: 350px;
+  height: 100px;
+}
+
+.portfolio {
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem;
+  color: #fff;
+  line-height: 100px;
+}
+
+.blog {
+  width: 100%;
+  height: 700px;
+}
+
+.pc-article-container {
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.sp-article-container {
+  display: none;
+}
+
+.article-block-lg {
+  width: 70%;
+  height: 90%;
+  float: left;
+  padding: 25px 40px 25px 40px;
+}
+
+.article-block-lg .article-img {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+
+}
+
+.article-tag,
+.article-title {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.article-block-mid {
+  float: right;
+  width: 30%;
+  height: 90%;
+  padding: 25px 40px 25px 0;
+}
+
+.article-block-sm {
+  width: 100%;
+  height: 54%;
+}
+
+.article-block-sm .article-img {
+  width: 100%;
+  height: 85%;
+  background-color: red;
+}
+
+.contact {
+  height: 1000px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+.form-group label {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.7rem;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #77A0CD;
+}
+
+/*
+色を変えるclass
+*/
+
+.bg-is-white {
+  background-color: #fff;
+}
+
+.bg-is-servise {
+  background-color: #ACA27D;
+}
+
+.bg-is-works {
+  background-color: #fff;
+
+}
+
+.bg-is-blog {
+  background-color: #4862AC;
+
+}
+
+.bg-is-contact {
+  background-color: grey;
+}
+
+.duration {
+  transition: all 500ms 0s ease;
+}
+
+/*
+about.htmlのcss
+*/
+
+.wrapper {
+  padding-top: 100px;
+}
+
+.wrapper h1 {
+  margin: 40px 0 40px 0;
+  padding-left: 80px;
+  font-size: 7rem;
+}
+
+.about-container{
+  margin-bottom: 50px;
+}
+
+.intys-area {
+  margin-bottom: 20px;
+}
+
+.intys-area p {
+  font-size: 2rem;
+}
+
+.intys-text {
+  margin-bottom: 150px;
+}
+
+.intys-text p {
+  font-size: 1.5rem;
+}
+
+.bg-is-about {
+  padding-top: 125px;
+  background-color: #4A929E;
+  padding-bottom: 50px;
+}
+
+.introduction {
+  margin: 50px 40px 20px 40px;
+  background-color: grey;
+}
+
+.introduction-img {
+  background-color: red;
+  width: 100%;
+  height: 200px;
+}
+
+.kanzi {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.alpabet {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.introduction-sns {
+  text-align: center;
+}
+
+.introduction-sns i {
+  padding-right: 20px;
+  font-size: 2.5rem;
+}
+
+.introduction-text {
+  font-size: 2.7rem;
+}
+
+.introduction-contact-link {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+
+.button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-link {
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/*
+portofolio.html
+*/
+
+.portfolio-wrapper {
+  padding-top: 100px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.portfolio-wrapper h1 {
+  font-size: 4.5rem;
+}
+
+.portfolio-page-title {
+  padding-left: 40px;
+  margin-bottom: 50px;
+}
+
+.portfolio-wrapper .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-row {
+  margin: 0 10px;
+}
+
+.portfolio-col {
+  width: 100%;
+  height: 360px;
+  border: 1px solid black;
+}
+
+.portfolio-col .caption {
+  font-size: 3rem;
+}
+
+/*
+blog.htmlのcss
+*/
+
+.blog-wrapper{
+  margin: 0 40px 0 30px;
+}
+
+.blog-article-block{
+  width:100%;
+  height: 1000px;
+}
+
+.article-container{
+  width:95%;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.article-img{
+  width:45%;
+  height: 200px;
+  background-color: red;
+}
+
+.article-description-container{
+  width:50%;
+  height: 200px;
+  
+}
+
+.article-tag{
+  background-color: blue;
+  text-align: left;
+  border-radius: 2px;
+  color:white;
+}
+
+.article-title{
+  text-align: left;
+  padding:5px 0 5px 0;
+  font-size:1.5rem;
+}
+
+.article-text{
+  text-align: left;
+}
+
+.blog-sidebar-block{
+  border:2px solid blue;
+  width:100%;
+  height: 500px;
+}
+
+.blog-sidebar-category,
+.blog-sidebar-news,
+.blog-sidebar-month
+{
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-category h2,
+.blog-sidebar-news h2,
+.blog-sidebar-month h2
+{
+  padding-bottom: 10px;
+}
+
+.blog-sidebar-category p,
+.blog-sidebar-news p,
+.blog-sidebar-month p
+{
+  font-size:1.5rem;
+}
+
+.blog-sidebar-news p{
+  padding-bottom: 5px;
+}
+
+
+/*小さめpcとタブレット用のブレイクポイント*/
+
+@media (max-width: 1092px) {
+  .servise-wrapper .servise-box .servise-text {
+    font-size: 1.5rem;
+  }
+
+  /*
+  about.html
+  */
+  .wrapper h1 {
+    padding-left: 40px;
+    font-size: 6rem;
+  }
+
+  .kanzi {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .alpabet {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .introduction-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-container {
+    padding: 10px 10px 0 10px;
+  }
+  .navigation-inner .nav-item a {
+    font-size: 1.7rem;
+  }
+
+  .icon-twitter {
+    font-size: 1.5rem;
+  }
+
+  .servise-wrapper .servise-box .servise-text {
+    font-size: 1.5rem;
+  }
+
+  .servise {
+    height: 1200px;
+  }
+
+  .servise .servise-wrapper .servise-box {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .blog {
+    height: 850px;
+  }
+
+  .pc-article-container {
+    display: none;
+  }
+
+  .sp-article-container {
+    display: block;
+    width: 100%;
+    height: 650px;
+    background-color: #fff;
+    margin-top: 30px;
+  }
+  .article-block-lg {
+    float: none;
+    height: 30%;
+    width: 100%
+  }
+
+  .footer-item {
+    display: inline;
+    margin-right: 30px;
+    font-size: 1.2rem;
+  }
+
+  /*
+  about.html
+  */
+  .wrapper h1 {
+    padding-left: 10px;
+    font-size: 3.5rem;
+  }
+
+  .kanzi {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .alpabet {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .introduction-text {
+    font-size: 2rem;
+  }
+  
+  /*
+  blog.html
+  */
+  .blog-article-block{
+    margin: 0 auto;
+  }
+  
+  .blog-sidebar-block{
+    display: none;
+  }
+  
+}
+
+/*スマホのブレイクポイント*/
+
+@media (max-width: 415px) {
+
+  /*index.html*/
+  .navigation-inner {
+    display: none;
+  }
+  .inner {
+    margin: 0 20px;
+  }
+
+  .logo {
+    padding-top: 20px;
+  }
+
+  .navigation-logo-intys {
+    width: 60px;
+    height: 30px;
+  }
+
+  .drawer {
+    display: block;
+  }
+  .servise-wrapper .servise-box .servise-text {
+    font-size: 1.5rem;
+  }
+
+  .servise {
+    height: 1200px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .servise .servise-wrapper .servise-box {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .works-title {
+    margin-bottom: 50px;
+  }
+
+  .works .portfolio-link {
+    width: 45%;
+    height: 50px;
+  }
+
+  .portfolio {
+    line-height: 50px;
+    font-size: 2.5rem;
+  }
+
+  .blog {
+    height: 675px;
+  }
+
+  .pc-article-container {
+    display: none;
+  }
+
+  .sp-article-container {
+    display: block;
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    margin-top: 30px;
+  }
+
+  .article-block-lg,
+  .article-block-sm {
+    float: none;
+    height: 45%;
+    width: 100%
+  }
+
+  /*
+  about.html
+  */
+  .wrapper h1 {
+    padding-left: 10px;
+    font-size: 4rem;
+  }
+
+  .kanzi {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .alpabet {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .introduction-text {
+    font-size: 2rem;
+  }
+
+  .introduction-skill li {
+    padding-left: 40px;
+  }
+
+  .introduction-sns i {
+    padding: 0 10px 0 10px;
+  }
+
+}
