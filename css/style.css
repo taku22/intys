@@ -49,8 +49,9 @@ index.htmlのクラス
 .header {
   width: 100%;
   height: 500px;
-  background-color: blue;
+  background: linear-gradient(rgba(118, 205, 205, 0.5), rgba(2, 117, 117, 0.5));
   margin: 0 auto;
+  position:relative;
 }
 
 .inner {
@@ -59,23 +60,13 @@ index.htmlのクラス
 }
 
 .navigation-container {
-  background-color: #fff;
+  background: linear-gradient(rgba(118, 205, 205, 0.5), rgba(2, 117, 117, 0.5));
   padding: 20px 20px 0 20px;
   margin-right: 10px;
   position: fixed;
   z-index: 100;
   width: 100%;
-  box-shadow: 0 1px rgba(0, 0, 0, .4);
 
-}
-
-.navigation-logo {
-  display: inline;
-}
-
-.navigation-logo-intys {
-  display: inline;
-  height: 50px;
 }
 
 .navigation-inner {
@@ -112,6 +103,46 @@ index.htmlのクラス
   font-family: 'Font Awesome 5 Brands';
 }
 
+.logo-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  
+}
+
+.intys-logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  display: block;
+  height: 80px;
+}
+
+.fade-in{
+    animation-name: fade-in;
+    animation-duration: 2s; 
+    animation-timing-function: ease-out; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+  }
+
+  @keyframes fade-in{
+    0% {
+      opacity: 0;
+      transform: translate3d(-100px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
 .clearfix::after {
   content: '';
   display: block;
@@ -132,7 +163,9 @@ index.htmlのクラス
 
 .servise {
   width: 100%;
-  height: 500px;
+  height: 800px;
+  background: linear-gradient(#C7B985,#554C2A);
+
 }
 
 .servise-wrapper {
@@ -141,11 +174,13 @@ index.htmlのクラス
   border-collapse: separate;
   border-spacing: 30px 5px;
   table-layout: fixed;
+  border:2px solid #fff;
 }
 
 .servise-box {
   display: table-cell;
   text-align: center;
+  padding: 100px 30px;
 }
 
 .servise-name {
@@ -179,6 +214,8 @@ index.htmlのクラス
 .works {
   width: 100%;
   height: 350px;
+  background: linear-gradient(#FFF,#AFAFAF);
+
 }
 
 .works-inner {
@@ -193,7 +230,7 @@ index.htmlのクラス
 }
 
 .portfolio-link {
-  background-color: grey;
+  background: linear-gradient(#76CDCD,#124141);
   margin: 0 auto 50px auto;
   width: 350px;
   height: 100px;
@@ -209,6 +246,8 @@ index.htmlのクラス
 .blog {
   width: 100%;
   height: 700px;
+  background: linear-gradient(#1C7AC1,#1C2F69);
+
 }
 
 .pc-article-container {
@@ -270,6 +309,7 @@ index.htmlのクラス
 
 .form-group {
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .form-group label {
@@ -280,6 +320,12 @@ index.htmlのクラス
 .form-group input,
 .form-group textarea {
   background-color: #77A0CD;
+}
+
+.btn{
+  display: block;
+  font-size: 2rem;
+  margin: 0 auto;
 }
 
 /*
