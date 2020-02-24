@@ -12,8 +12,7 @@ html {
 
 body {
   margin: 0;
-  color: #001360;
-  background-color: #fff;
+  color:#fff;
   font-family: 'Crimson Text', serif;
 
 }
@@ -25,7 +24,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #001360;
+  color: #fff;
 }
 
 div {
@@ -199,7 +198,7 @@ index.htmlのクラス
   padding-top: 30px;
 }
 
-.Works-title {
+.works-title {
   padding-top: 30px;
 }
 
@@ -301,6 +300,8 @@ index.htmlのクラス
 
 .contact {
   height: 1000px;
+  background: linear-gradient(#FFF,#AFAFAF);
+
 }
 
 .form-container {
@@ -326,36 +327,6 @@ index.htmlのクラス
   display: block;
   font-size: 2rem;
   margin: 0 auto;
-}
-
-/*
-色を変えるclass
-*/
-
-.bg-is-white {
-  background-color: #fff;
-}
-
-.bg-is-servise {
-  background-color: #ACA27D;
-}
-
-.bg-is-works {
-  background-color: #fff;
-
-}
-
-.bg-is-blog {
-  background-color: #4862AC;
-
-}
-
-.bg-is-contact {
-  background-color: grey;
-}
-
-.duration {
-  transition: all 500ms 0s ease;
 }
 
 /*
