@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="scroll" class="duration">
+<body>
   <header class="header">
     <div class="navigation-container">
       <div class="navigation-inner">
@@ -59,20 +59,20 @@
   <section class="servise" id="scroll-color01">
     <section class="inner">
       <div class="section-title">
-        <h1 class="servise-title">Servise</h1>
+        <h1 class="servise-title hide-section-title" id="section-title01">Servise</h1>
       </div>
-      <div class="servise-wrapper">
-        <div class="servise-box">
+      <div class="servise-wrapper" >
+        <div class="servise-box hide-service-box" id="service-box01">
           <i class="fas fa-tools fa-8x"></i>
           <div class="servise-name">System</div>
           <p class="servise-text">お客様の要望をヒアリングし、<br>現状の問題点を洗い出し、<br>効果的なプランを作成いたします。</p>
         </div>
-        <div class="servise-box">
+        <div class="servise-box hide-service-box" id="service-box02">
           <i class="fas fa-palette fa-8x"></i>
           <div class="servise-name">DESIGN</div>
           <p class="servise-text">ヒアリングに基づいたプランに<br>沿って、デザインを作成いたします。<br>人の使うものであることを常に意識して、<br>使う人が迷わない、目的を達成できる<br>デザインを心がけます。</p>
         </div>
-        <div class="servise-box">
+        <div class="servise-box hide-service-box" id="service-box03">
           <i class="fas fa-laptop-code fa-8x"></i>
           <div class="servise-name">HP</div>
           <p class="servise-text">ヒアリングに基づいたプランに<br>沿って、デザインを作成いたします。<br>人の使うものであることを常に意識して、<br>使う人が迷わない、目的を達成できる<br>デザインを心がけます。</p>
@@ -82,7 +82,7 @@
   </section>
   <section class="works" id="scroll-color02">
     <section class="inner works-inner">
-      <div class="section-title">
+      <div class="section-title hide-section-title" id="section-title02">
         <h1 class="works-title"><span class="ajust-font">W</span>orks</h1>
       </div>
       <div class="portfolio-link">
@@ -94,7 +94,7 @@
   <section class="blog" id="scroll-color03">
     <section class="inner">
       <div class="section-title">
-        <h1 class="blog-title">Blog</h1>
+        <h1 class="blog-title hide-section-title" id="section-title03">Blog</h1>
       </div>
 
       <div class="pc-article-container">
@@ -175,7 +175,7 @@
   <section class="contact" id="scroll-color04">
     <div class="inner">
       <div class="section-title">
-        <h1 class="contact-title">Contact</h1>
+        <h1 class="contact-title hide-section-title" id="section-title04">Contact</h1>
       </div>
 
       <div class="form-container">
@@ -219,6 +219,8 @@
       $('.drawer').drawer();
     });
   </script>
+  <script src="js/scroll.js"></script>
+
 </body>
 
 </html>

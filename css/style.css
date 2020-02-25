@@ -47,8 +47,8 @@ index.htmlのクラス
 
 .header {
   width: 100%;
-  height: 500px;
-  background: linear-gradient(rgba(118, 205, 205, 0.5), rgba(2, 117, 117, 0.5));
+  height: 1000px;
+  background: linear-gradient(rgba(118, 205, 205, 1), rgba(2, 117, 117, 1));
   margin: 0 auto;
   position:relative;
 }
@@ -141,6 +141,25 @@ index.htmlのクラス
     }
   }
 
+.fade-in-from-bottom{
+    animation-name: fade-in-from-bottom;
+    animation-duration: 2s; 
+    animation-timing-function: ease-out; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+  }
+
+  @keyframes fade-in-from-bottom{
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
 .clearfix::after {
   content: '';
@@ -150,6 +169,10 @@ index.htmlのクラス
 
 .section-title {
   padding-top: 50px;
+}
+
+.hide-section-title{
+  display: none;
 }
 
 .servise-title,
