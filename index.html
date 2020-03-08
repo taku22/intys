@@ -16,7 +16,9 @@
   <!-- drawer.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -61,7 +63,8 @@
       <div class="section-title">
         <h1 class="servise-title hide-section-title" id="section-title01">Servise</h1>
       </div>
-      <div class="servise-wrapper" >
+
+      <div class="servise-wrapper" id="servise-wrapper">
         <div class="servise-box hide-service-box" id="service-box01">
           <i class="fas fa-tools fa-8x"></i>
           <div class="servise-name">System</div>
@@ -80,14 +83,18 @@
       </div>
     </section>
   </section>
+
   <section class="works" id="scroll-color02">
     <section class="inner works-inner">
       <div class="section-title hide-section-title" id="section-title02">
         <h1 class="works-title"><span class="ajust-font">W</span>orks</h1>
       </div>
-      <div class="portfolio-link">
-        <p class="portfolio">portfolio</p>
+
+      <div class="portfolio">
+        <div class="portfolio-eff"></div>
+        <a href="#" class="a">portfolio</a>
       </div>
+
     </section>
   </section>
 
@@ -97,79 +104,89 @@
         <h1 class="blog-title hide-section-title" id="section-title03">Blog</h1>
       </div>
 
-      <div class="pc-article-container">
-        <div class="article-block-lg">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title">○○○</p>
-        </div>
-        <div class="article-block-mid">
-          <div class="article-block-sm">
-            <div class="article-img"></div>
-            <p class="article-tag">tag</p>
-            <p class="article-title">○○○</p>
+      <div class="row blog-content">
+
+        <div class="col-4 blog-animation">
+
+          <div class="card blog-card slide-in">
+            <img src="img/aki.png" class="card-img-top" width="100%" height="100%">
+            <div class="card-body">
+              <p class="card-text">#HP制作 #SEO対策</p>
+              <p class="card-text">【保存版】SEOで上位にくるタイトル！</p>
+            </div>
           </div>
-          <div class="article-block-sm">
-            <div class="article-img"></div>
-            <p class="article-tag">tag</p>
-            <p class="article-title">○○○</p>
+
+        </div>
+
+        <div class="col-4">
+
+          <div class="card blog-card">
+            <img src="img/aki.png" class="card-img-top" width="100%" height="100%">
+            <div class="card-body">
+              <p class="card-text">タグタグ</p>
+              <p class="card-text">タイトルタイトル</p>
+            </div>
           </div>
+
         </div>
+        <div class="col-4">
+
+          <div class="card blog-card">
+            <img src="img/aki.png" class="card-img-top" width="50%" height="50%">
+            <div class="card-body">
+              <p class="card-text">タグタグ</p>
+              <p class="card-text">タイトルタイトル</p>
+            </div>
+          </div>
+
+        </div>
+
 
       </div>
-      <div class="sp-article-container">
-        <div class="article-block-lg">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title">○○○</p>
+
+      <div class="row blog-content">
+
+        <div class="col-4">
+
+          <div class="card blog-card">
+            <img src="img/aki.png" class="card-img-top" width="100%" height="100%">
+            <div class="card-body">
+              <p class="card-text">#HP制作 #SEO対策</p>
+              <p class="card-text">【保存版】SEOで上位にくるタイトル！</p>
+            </div>
+          </div>
+
         </div>
-        <div class="article-block-lg">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title">○○○</p>
+
+        <div class="col-4">
+
+          <div class="card blog-card">
+            <img src="img/aki.png" class="card-img-top" width="100%" height="100%">
+            <div class="card-body">
+              <p class="card-text">タグタグ</p>
+              <p class="card-text">タイトルタイトル</p>
+            </div>
+          </div>
+
         </div>
+        <div class="col-4">
+
+          <div class="card blog-card">
+            <img src="img/aki.png" class="card-img-top" width="50%" height="50%">
+            <div class="card-body">
+              <p class="card-text">タグタグ</p>
+              <p class="card-text">タイトルタイトル</p>
+            </div>
+          </div>
+
+        </div>
+
 
       </div>
-      <!--
-      <div class="article-parent-top">
-        <div class="article-child-top">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title">○○○</p>
-        </div>
-        <div class="article-child-top">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title">○○○</p>
-        </div>
-        <div class="article-child-top">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title"></p>
-        </div>
+
+
+
       </div>
-      <div class="article-parent-bottom">
-        <div class="article-child-bottom">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title"></p>
-        </div>
-        <div class="article-child-bottom">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title"></p>
-        </div>
-        <div class="article-child-bottom">
-          <div class="article-img"></div>
-          <p class="article-tag">tag</p>
-          <p class="article-title"></p>
-        </div>
-      </div>
-      -->
-
-
-
-
     </section>
   </section>
   <section class="contact" id="scroll-color04">
@@ -204,8 +221,11 @@
             <label for="message">Message</label>
             <textarea class="form-control" id="message" rows="5"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
 
+          <div class="btn-submit">
+            <div class="btn-submit-effect"></div>
+            <a href="#" role="button" class="btn">Submit</a>
+          </div>
         </form>
       </div>
     </div>

@@ -26,7 +26,6 @@ function changeColor() {
 }
 
 //window.addEventListener('scroll', changeColor);
-
 function fadeIn() {
   var nowScrollY = window.scrollY;
   var sectionTitle01 = document.getElementById('section-title01');
@@ -71,3 +70,5 @@ function fadeIn() {
 }
 
 window.addEventListener('scroll', fadeIn);
+
+
