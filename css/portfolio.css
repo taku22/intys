@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+portofolio.html
+*/
+
+.portfolio-wrapper {
+  padding-top: 100px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.portfolio-wrapper h1 {
+  font-size: 4.5rem;
+}
+
+.portfolio-page-title {
+  padding-left: 40px;
+  margin-bottom: 50px;
+}
+
+.portfolio-wrapper .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-row {
+  margin: 0 10px;
+}
+
+.portfolio-col {
+  width: 100%;
+  height: 360px;
+  border: 1px solid black;
+}
+
+.portfolio-col .caption {
+  font-size: 3rem;
+}

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <title>InTys</title>
+  <title>InTys-index-</title>
   <!--ハンバーガメニューの呼び出し -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
   <!-- jquery & iScroll -->
@@ -16,43 +16,54 @@
   <!-- drawer.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+
 
 </head>
 
 <body>
   <header class="header">
     <div class="navigation-container">
+      <div class="navigation-logo">
+        <img src="img/intys_logo01_white.png" alt="インティスロゴ" class="navigation-logo-intys">
+      </div>
       <div class="navigation-inner">
         <ul>
-          <li class="nav-item"><a href="#">Servise</a></li>
-          <li class="nav-item"><a href="#"><span class="ajust-font">W</span>orks</a></li>
-          <li class="nav-item"><a href="#">Blog</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#scroll-color01">Servise</a></li>
+          <li class="nav-item"><a href="#scroll-color02"><span class="ajust-font">W</span>orks</a></li>
+          <li class="nav-item"><a href="#scroll-color03">Blog</a></li>
+          <li class="nav-item"><a href="#scroll-color04">Contact</a></li>
           <i class="icon-twitter"></i>
         </ul>
       </div>
+    </div>
 
-      <div class="drawer drawer--right">
-        <div role="banner">
-          <!-- ハンバーガーボタン -->
-          <button type="button" class="drawer-toggle drawer-hamburger">
+    <div class="drawer drawer--right">
+      <div role="banner">
+        <!-- ハンバーガーボタン -->
+        <button type="button" class="drawer-toggle drawer-hamburger">
             <span class="sr-only">toggle navigation</span>
             <span class="drawer-hamburger-icon"></span>
           </button>
-          <!-- ナビゲーションの中身 -->
-          <nav class="drawer-nav" role="navigation">
-            <ul class="drawer-menu">
-              <li class="nav-item"><a class="drawer-menu-item" href="#">Servise</a></li>
-              <li class="nav-item"><a class="drawer-menu-item" href="#"><span class="ajust-font">W</span>orks</a></li>
-              <li class="nav-item"><a class="drawer-menu-item" href="#">Blog</a></li>
-              <li class="nav-item"><a class="drawer-menu-item" href="#">About</a></li>
-            </ul>
-          </nav>
-        </div>
+        <!-- ナビゲーションの中身 -->
+        <nav class="drawer-nav" role="navigation">
+          <ul class="drawer-menu">
+            <li class="nav-item"><a class="drawer-menu-item" href="#scroll-color01">Servise</a></li>
+            <li class="nav-item"><a class="drawer-menu-item" href="#scroll-color02"><span class="ajust-font">W</span>orks</a></li>
+            <li class="nav-item"><a class="drawer-menu-item" href="#scroll-color03">Blog</a></li>
+            <li class="nav-item"><a class="drawer-menu-item" href="#scroll-color04">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
+
+
+
+    <img src="img/topimage.png" class="top-image"></img>
+
     <div class="logo-container fade-in">
       <img src="img/intys_logo01.png" alt="インティスロゴ" class="intys-logo">
     </div>
@@ -106,22 +117,24 @@
 
       <div class="row blog-content">
 
-        <div class="col-4 blog-animation">
+        <div class="col-md-4">
 
-          <div class="card blog-card slide-in">
+          <div class="card blog-card">
+
             <img src="img/aki.png" class="card-img-top" width="100%" height="100%">
             <div class="card-body">
               <p class="card-text">#HP制作 #SEO対策</p>
               <p class="card-text">【保存版】SEOで上位にくるタイトル！</p>
             </div>
+
           </div>
 
         </div>
 
-        <div class="col-4">
+        <div class="col-md-4">
 
           <div class="card blog-card">
-            <img src="img/aki.png" class="card-img-top" width="100%" height="100%">
+            <img src="img/aki.png" class="card-img-top card-img" width="100%" height="100%">
             <div class="card-body">
               <p class="card-text">タグタグ</p>
               <p class="card-text">タイトルタイトル</p>
@@ -129,7 +142,7 @@
           </div>
 
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
 
           <div class="card blog-card">
             <img src="img/aki.png" class="card-img-top" width="50%" height="50%">
@@ -143,49 +156,6 @@
 
 
       </div>
-
-      <div class="row blog-content">
-
-        <div class="col-4">
-
-          <div class="card blog-card">
-            <img src="img/aki.png" class="card-img-top" width="100%" height="100%">
-            <div class="card-body">
-              <p class="card-text">#HP制作 #SEO対策</p>
-              <p class="card-text">【保存版】SEOで上位にくるタイトル！</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-4">
-
-          <div class="card blog-card">
-            <img src="img/aki.png" class="card-img-top" width="100%" height="100%">
-            <div class="card-body">
-              <p class="card-text">タグタグ</p>
-              <p class="card-text">タイトルタイトル</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-4">
-
-          <div class="card blog-card">
-            <img src="img/aki.png" class="card-img-top" width="50%" height="50%">
-            <div class="card-body">
-              <p class="card-text">タグタグ</p>
-              <p class="card-text">タイトルタイトル</p>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-
       </div>
     </section>
   </section>
@@ -240,6 +210,7 @@
     });
   </script>
   <script src="js/scroll.js"></script>
+  <script src="js/smothScroll.js"></script>
 
 </body>
 

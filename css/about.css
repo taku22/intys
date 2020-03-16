@@ -1,0 +1,320 @@
+  @charset "UTF-8";
+  
+  .header {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .inner {
+    margin: 0 70px;
+    height: 100%;
+  }
+  
+  .navigation-container{
+    background-color:#29BCBC;
+  }
+  
+  .navigation-logo {
+    display: inline;
+  }
+  
+  .navigation-logo-intys {
+    display: inline;
+    height: 50px;
+  }
+  
+  .navigation-inner {
+    float: right;
+    margin-right: 50px;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin: 0 20px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .nav-item a {
+    font-size: 3rem;
+  }
+  
+  .drawer {
+    display: none;
+  }
+  
+  .fa-twitter {
+    content: '\f099';
+    font-family: 'FontAwesome 5 Brands';
+    font-weight: 900;
+  }
+  
+  .icon-twitter {
+    font-size: 2rem;
+    color: #FFF;
+  }
+  
+  .icon-twitter::before {
+    content: '\f099';
+    font-family: 'Font Awesome 5 Brands';
+  }
+  
+  .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  
+  
+  
+  
+  /*
+  about.htmlのcss
+  */
+  
+  .wrapper h1 {
+    padding-top: 75px;
+    padding-left: 80px;
+    font-size: 7rem;
+    color:#1E4765;
+  }
+  
+  .intys-detail {
+    background-color:#FFF;
+    height: 578px;
+  }
+  
+  .intys-detail h1{
+    padding-top: 150px;
+  }
+  
+  .about-container {
+    margin-bottom: 50px;
+    padding-top: 50px;
+    color:#1E4765;
+  }
+  
+  .intys-area {
+    margin-bottom: 20px;
+  }
+  
+  .intys-area p {
+    font-size: 2rem;
+  }
+  
+  .intys-text {
+    margin-bottom: 150px;
+  }
+  
+  .intys-text p {
+    font-size: 1.5rem;
+  }
+  
+  body {
+    color: #141334;
+  }
+  
+  .member-introduction {
+    width:70%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+  
+  
+  .card-inner {
+    padding: 30px 50px;
+  
+  }
+  
+  .member-img {
+    border: 3px solid #1E4765;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-description{
+    background-color: #E7E7E7;
+  }
+  
+  
+  .name {
+    padding: 20px 30px;
+  }
+  
+  .japanese-name {
+    font-size: 3.4rem;
+  }
+  
+  .alpabet-name {
+    font-size: 1.8rem;
+    padding-top: 20px;
+    color:#29BCBC;
+  }
+  
+  .business-description {
+    font-size: 1.8rem;
+    padding: 20px 30px;
+  }
+  
+  .programing-language {
+    font-size: 1.8rem;
+    padding: 20px 30px;
+  }
+  
+  .sns-icon {
+    padding: 10px 40px;
+  }
+  
+  .sns-icon .icon-twitter {
+    padding-right: 10px;
+    color:#000;
+  }
+  
+  .icon-inst {
+    color: black;
+    font-size: 2rem;
+    padding-right: 10px;
+  }
+  
+  .icon-youtube {
+    font-size: 2rem;
+  }
+  
+  .icon-github {
+    font-size: 2rem;
+    padding-right: 10px;
+  
+  }
+  
+  .introduction-contact-link {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+  
+  }
+  
+  .button {
+    text-align: center;
+    margin-top: 30px;
+  
+  }
+  
+  .contact-link {
+    background: linear-gradient(#29BCBC, #027575);
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .contact-link a{
+    text-decoration: none;
+  }
+  
+  .footer{
+    background-color: #434343;
+    width:100%;
+    height: 25px;
+  }
+  
+  .footer div{
+  text-align: center;
+  }
+  
+  .footer small{
+    text-align: center;
+    font-size:1.5rem;
+    color:#FFF;
+  }
+  
+  /*小さめpcとタブレット用のブレイクポイント*/
+  
+  @media (max-width: 1092px) {
+    /*
+    about.html
+    */
+    .wrapper h1 {
+      padding-left: 40px;
+      font-size: 6rem;
+    }
+  
+    .member-introduction{
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    
+    .japanese-name{
+      font-size: 3rem;
+    }
+    
+    .alpabet-name{
+      font-size:1.5rem;
+      padding-top: 10px;
+    }
+    
+    .card-description, .business-description ,.programing-language{
+      font-size:1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    .navigation-container {
+      padding: 10px 10px 0 10px;
+    }
+    .navigation-inner .nav-item a {
+      font-size: 1.7rem;
+    }
+  
+    .icon-twitter {
+      font-size: 1.5rem;
+    }
+    /*
+    about.html
+    */
+    .wrapper h1 {
+      padding-left: 10px;
+      font-size: 3.5rem;
+    }
+    .member-introduction{
+      margin-bottom: 20px;
+    }
+  }
+  
+  /*スマホのブレイクポイント*/
+  
+  @media (max-width: 415px) {
+    .navigation-inner {
+      display: none;
+    }
+    .inner {
+      margin: 0 20px;
+    }
+  
+    .logo {
+      padding-top: 20px;
+    }
+  
+    .navigation-logo-intys {
+      width: 60px;
+      height: 30px;
+    }
+  
+    .drawer {
+      display: block;
+    }
+    /*
+    about.html
+    */
+    .wrapper h1 {
+      padding-left: 10px;
+      font-size: 4rem;
+    }
+  
+    .member-introduction{
+      margin-bottom: 20px;
+    }
+      .card-description, .business-description ,.programing-language{
+      font-size:1.2rem;
+    }
+  
+  }
