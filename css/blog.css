@@ -1,85 +1,17 @@
 @charset "UTF-8";
-
-/*
-blog.htmlのcss
-*/
-
-.blog-wrapper {
-  margin: 0 40px 0 30px;
-}
-
-.blog-article-block {
-  width: 100%;
-  height: 1000px;
-}
-
-.article-container {
-  width: 95%;
-  height: 200px;
-  margin-bottom: 40px;
-}
-
-.article-img {
-  width: 45%;
-  height: 200px;
-  background-color: red;
-}
-
-.article-description-container {
-  width: 50%;
-  height: 200px;
-
-}
-
-.article-tag {
-  background-color: blue;
-  text-align: left;
-  border-radius: 2px;
-  color: white;
-}
-
-.article-title {
-  text-align: left;
-  padding: 5px 0 5px 0;
-  font-size: 1.5rem;
-}
-
-.article-text {
-  text-align: left;
-}
-
-.blog-sidebar-block {
-  border: 2px solid blue;
-  width: 100%;
-  height: 500px;
-}
-
-.blog-sidebar-category,
-.blog-sidebar-news,
-.blog-sidebar-month {
-  margin-bottom: 30px;
-}
-
-.blog-sidebar-category h2,
-.blog-sidebar-news h2,
-.blog-sidebar-month h2 {
-  padding-bottom: 10px;
-}
-
-.blog-sidebar-category p,
-.blog-sidebar-news p,
-.blog-sidebar-month p {
-  font-size: 1.5rem;
-}
-
-.blog-sidebar-news p {
-  padding-bottom: 5px;
-}
-
 @media (max-width: 768px) {
-  /*
-  blog.html
-  */
+
+  .navigation-container {
+    padding: 10px 10px 0 10px;
+    display: block;
+  }
+  .navigation-inner .nav-item a {
+    font-size: 1.7rem;
+  }
+
+  .icon-twitter {
+    font-size: 1.5rem;
+  }
   .blog-article-block {
     margin: 0 auto;
   }
@@ -87,5 +19,26 @@ blog.htmlのcss
   .blog-sidebar-block {
     display: none;
   }
+}
 
+@media (max-width: 415px) {
+  .navigation-inner {
+    display: none;
+  }
+  .inner {
+    margin: 0 20px;
+  }
+
+  .logo {
+    padding-top: 20px;
+  }
+
+  .navigation-logo-intys {
+    width: 60px;
+    height: 30px;
+  }
+
+  .drawer {
+    display: block;
+  }
 }

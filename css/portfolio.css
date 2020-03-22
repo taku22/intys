@@ -37,3 +37,41 @@ portofolio.html
 .portfolio-col .caption {
   font-size: 3rem;
 }
+
+
+@media (max-width: 768px) {
+
+  .navigation-container {
+    padding: 10px 10px 0 10px;
+    display: block;
+  }
+  .navigation-inner .nav-item a {
+    font-size: 1.7rem;
+  }
+
+  .icon-twitter {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .navigation-inner {
+    display: none;
+  }
+  .inner {
+    margin: 0 20px;
+  }
+
+  .logo {
+    padding-top: 20px;
+  }
+
+  .navigation-logo-intys {
+    width: 60px;
+    height: 30px;
+  }
+
+  .drawer {
+    display: block;
+  }
+}

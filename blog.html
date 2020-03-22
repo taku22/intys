@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <title>InTys</title>
+    <title>InTys-blog-</title>
     <!--ハンバーガメニューの呼び出し -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
     <!-- jquery & iScroll -->
@@ -22,17 +22,18 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="navigation-container">
             <div class="navigation-logo">
-                <img src="img/intys_logo01.png" alt="インティスロゴ" class="navigation-logo-intys">
+                <img src="img/intys_logo01_white.png" alt="インティスロゴ" class="navigation-logo-intys">
             </div>
             <div class="navigation-inner">
                 <ul>
-                    <li class="nav-item"><a href="#">Servise</a></li>
-                    <li class="nav-item"><a href="#"><span class="ajust-font">W</span>orks</a></li>
-                    <li class="nav-item"><a href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#scroll-color01">Servise</a></li>
+                    <li class="nav-item"><a href="#scroll-color02"><span class="ajust-font">W</span>orks</a></li>
+                    <li class="nav-item"><a href="#scroll-color03">Blog</a></li>
                     <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#scroll-color04">Contact</a></li>
                     <i class="icon-twitter"></i>
                 </ul>
             </div>
@@ -40,6 +41,7 @@
             <div class="drawer drawer--right">
                 <div role="banner">
                     <!-- ハンバーガーボタン -->
+
                     <button type="button" class="drawer-toggle drawer-hamburger">
             <span class="sr-only">toggle navigation</span>
             <span class="drawer-hamburger-icon"></span>
@@ -47,69 +49,27 @@
                     <!-- ナビゲーションの中身 -->
                     <nav class="drawer-nav" role="navigation">
                         <ul class="drawer-menu">
-                            <li class="nav-item"><a class="drawer-menu-item" href="#">Servise</a></li>
-                            <li class="nav-item"><a class="drawer-menu-item" href="#"><span class="ajust-font">W</span>orks</a></li>
-                            <li class="nav-item"><a class="drawer-menu-item" href="#">Blog</a></li>
+                            <li class="nav-item"><a class="drawer-menu-item" href="#scroll-color01">Servise</a></li>
+                            <li class="nav-item"><a class="drawer-menu-item" href="#scroll-color02"><span class="ajust-font">W</span>orks</a></li>
+                            <li class="nav-item"><a class="drawer-menu-item" href="#scroll-color03">Blog</a></li>
                             <li class="nav-item"><a class="drawer-menu-item" href="#">About</a></li>
+                            <li class="nav-item"><a class="drawer-menu-item" href="#scroll-color04">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <section class="wrapper blog-wrapper">
-        <h1>Blog</h1>
-        <div class="container row">
-
-            <div class="blog-article-block col-md-9 col-sm-12">
-                <div class="article-container">
-                    <div class="article-img float-left"></div>
-                    <div class="article-description-container float-right">
-                        <div class="article-tag">タグタグタグ</div>
-                        <div class="article-title">タイトルタイトルタイトルタイトルタイトルタイトル</div>
-                        <div class="article-text">テキストテキストテキストテキストテキストテキスト</div>
-                    </div>
-                </div>
-                <div class="article-container">
-                    <div class="article-img float-left"></div>
-                    <div class="article-description-container float-right">
-                        <div class="article-tag">タグタグタグ</div>
-                        <div class="article-title">タイトルタイトルタイトルタイトルタイトルタイトル</div>
-                        <div class="article-text">テキストテキストテキストテキストテキストテキスト</div>
-                    </div>
-                </div>
-                <div class="article-container">
-                    <div class="article-img float-left"></div>
-                    <div class="article-description-container float-right">
-                        <div class="article-tag">タグタグタグ</div>
-                        <div class="article-title">タイトルタイトルタイトルタイトルタイトルタイトル</div>
-                        <div class="article-text">テキストテキストテキストテキストテキストテキスト</div>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-sidebar-block offset-1 col-md-2">
-                <div class="blog-sidebar-category">
-                    <h2>Category</h2>
-                </div>
-                
-                <div class="blog-sidebar-news">
-                    <h2>News</h2>
-                    <p>・記事タイトル</p>
-                    <p>・記事タイトル</p>
-                    <p>・記事タイトル</p>
-                    <p>・記事タイトル</p>
-                </div>
-                
-                <div class="blog-sidebar-month">
-                    <h2>By Month</h2>
-                    <p>・2020年1月</p>
-                    <p>・2020年2月</p>
-                    <p>・2020年3月</p>
-                    <p>・2020年4月</p>
-                    <p>・2020年5月</p>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
+<footer class="footer">
+    <div class="">
+        <small>Copyright &copy; 2020 Intys. All Rights Reserved.</small>
+    </div>
+</footer>
+<script>
+    $(document).ready(function() {
+        $('.drawer').drawer();
+    });
+</script>
+
 </html>

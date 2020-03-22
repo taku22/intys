@@ -1,6 +1,12 @@
 @charset "UTF-8";
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
-/*index 以外のページのheader*/
+/*header*/
+
 .navigation-container {
   background: linear-gradient(rgba(118, 205, 205, 0.5), rgba(2, 117, 117, 0.5));
   padding: 20px 20px 0 20px;
@@ -13,4 +19,131 @@
 
 .drawer {
   display: none;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inner {
+  margin: 0 70px;
+  height: 100%;
+}
+
+.navigation-container {
+  background-color: #29BCBC;
+}
+
+.navigation-logo {
+  display: inline;
+}
+
+.navigation-logo-intys {
+  display: inline;
+  height: 50px;
+}
+
+.navigation-inner {
+  float: right;
+  margin-right: 50px;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 20px;
+  font-family: 'Crimson Text', serif;
+}
+
+.nav-item a {
+  font-size: 3rem;
+}
+
+.drawer {
+  display: none;
+}
+
+.drawer-nav{
+  background:#29BCBC;
+}
+
+.drawer-menu-item{
+  color:#FFF;
+}
+
+.fa-twitter {
+  content: '\f099';
+  font-family: 'FontAwesome 5 Brands';
+  font-weight: 900;
+}
+
+.icon-twitter {
+  font-size: 2rem;
+  color: #FFF;
+}
+
+.icon-twitter::before {
+  content: '\f099';
+  font-family: 'Font Awesome 5 Brands';
+}
+
+/*footer*/
+
+.footer {
+  background-color: #434343;
+  width: 100%;
+  height: 25px;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.footer small {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+@media (max-width: 768px) {
+  /*header*/
+  .navigation-container {
+    padding: 10px 10px 0 10px;
+  }
+  .navigation-inner .nav-item a {
+    font-size: 1.7rem;
+  }
+
+  .icon-twitter {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  /*header*/
+  .header {
+    height: 810px;
+  }
+  .navigation-container {
+    display: none;
+  }
+  .navigation-inner {
+    display: none;
+  }
+  .inner {
+    margin: 0 20px;
+  }
+
+  .logo {
+    padding-top: 20px;
+  }
+
+  .navigation-logo-intys {
+    width: 60px;
+    height: 30px;
+  }
+
+  .drawer {
+    display: block;
+  }
 }

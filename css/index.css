@@ -1,449 +1,179 @@
-@charset "UTF-8";
-/*
-index.htmlのクラス
-*/
-
-.header {
-  width: 100%;
-  height: 1000px;
-  background: linear-gradient(rgba(118, 205, 205, 1), rgba(2, 117, 117, 1));
-  margin: 0 auto;
-  position: relative;
-}
-
-.top-image{
-  width:100%;
-  height:100%;
-}
-
-.inner {
-  margin: 0 70px;
-  height: 100%;
-}
-
-.navigation-container {
-  background-color:#29BCBC;
-  padding: 20px 20px 0 20px;
-  margin-right: 10px;
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-
-}
-
-.navigation-logo {
-  display: inline;
-}
-
-.navigation-logo-intys {
-  display: inline;
-  height: 50px;
-}
-
-.navigation-inner {
-  float: right;
-  margin-right: 50px;
-}
-
-.nav-item {
-  display: inline-block;
-  margin: 0 20px;
-  font-family: 'Crimson Text', serif;
-}
-
-.nav-item a {
-  font-size: 3rem;
-}
-
-.drawer {
-  display: none;
-}
-
-.fa-twitter {
-  content: '\f099';
-  font-family: 'FontAwesome 5 Brands';
-  font-weight: 900;
-}
-
-.icon-twitter {
-  font-size: 2rem;
-}
-
-.icon-twitter::before {
-  content: '\f099';
-  font-family: 'Font Awesome 5 Brands';
-}
-
-.logo-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
-
-}
-
-.intys-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  display: block;
-  height: 80px;
-}
-
-.appear-box-border {
-  position: relative;
-}
-
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.section-title {
-  padding-top: 50px;
-  text-shadow: 1px 1px 10px black;
-}
-
-.hide-section-title {
-  display: none;
-}
-
-.servise-title,
-.works-title,
-.blog-title,
-.contact-title {
-  font-size: 4rem;
-  font-family: 'Crimson Text', serif;
-}
-
-.servise {
-  width: 100%;
-  height: 800px;
-  background: linear-gradient(#154A4A, #29BCBC);
-}
-
-.servise-wrapper {
-  display: table;
-  margin: 50px auto 0 auto;
-  border-collapse: separate;
-  border-spacing: 30px 5px;
-  table-layout: fixed;
-}
-
-.servise-box {
-  display: table-cell;
-  text-align: center;
-  padding: 100px 30px;
-}
-
-.servise-name {
-  font-size: 2rem;
-  font-family: 'Noto Sans JP', sans-serif;
-  padding-top: 20px;
-}
-
-.servise-text {
-  font-size: 1.7rem;
-  font-family: 'Noto Sans JP', sans-serif;
-  padding-top: 10px;
-}
-
-.servise-title {
-  padding-top: 30px;
-}
-
-.works-title {
-  padding-top: 30px;
-}
-
-.ajust-font {
-  letter-spacing: -5px;
-}
-
-.blog-title {
-  text-shadow: none;
-  padding-top: 30px;
-  color: #606060;
-}
-
-.works {
-  width: 100%;
-  height: 350px;
-  background: linear-gradient(#29BCBC, #FFF);
-}
-
-.works-inner {
-  text-align: center;
-  height: 100%;
-}
-
-.works-title {
-  text-align: left;
-  padding-top: 30px;
-  margin-bottom: 30px;
-}
-
-.portfolio {
-  background-color: #1C7AC1;
-  font-family: 'Crimson Text', serif;
-  font-size: 3rem;
-  margin: 0 auto 50px auto;
-  width: 350px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio a {
-  color: #fff;
-  text-decoration: none;
-  line-height: 100px;
-  transition: all .5s ease;
-  z-index: 2;
-  position: relative;
-}
-
-.portfolio-eff {
-  width: 350px;
-  height: 100px;
-  left: -350px;
-  background: #fff;
-  position: absolute;
-  transition: all .5s ease;
-  z-index: 1;
-}
-
-.portfolio:hover .portfolio-eff {
-  left: 0;
-}
-
-.portfolio:hover a {
-  color: #1C7AC1;
-}
-
-.blog {
-  width: 100%;
-  height: 600px;
-  background-color: #FFF;
-}
-
-.blog-content {
-  margin-top: 25px;
-}
-
-.blog-card {
-  border: none;
-}
-
-.blog-card p {
-  font-size: 2rem;
-  color: #000;
-  text-align: center;
-
-}
-
-.contact {
-  height: 1000px;
-  background-color: #FFF;
-  color: #606060;
-
-}
-
-.contact-title {
-  color: #606060;
-  text-shadow: none;
-}
-
-.form-container {
-  margin-top: 20px;
-}
-
-.form-group {
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
-.form-group label {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.7rem;
-}
-
-.form-group input,
-.form-group textarea {
-  background-color: #77A0CD;
-}
-
-.btn-submit {
-  width: 136px;
-  height: 38px;
-  border: 1px solid #606060;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-align: center;
-  line-height: 34px;
-}
-
-.btn {
-  text-align: center;
-  font-size: 2rem;
-  position: relative;
-  transition: all .5s ease;
-  z-index: 2;
-}
-
-.btn-submit-effect {
-  width: 136px;
-  height: 38px;
-  left: -136px;
-  position: absolute;
-  background: #34495e;
-  transition: all .5s ease;
-  z-index: 1;
-}
-
-.btn-submit:hover .btn-submit-effect {
-  left: 0;
-}
-
-.btn-submit:hover .btn {
-  color: #fff;
-}
-
-/*小さめpcとタブレット用のブレイクポイント*/
-
-@media (max-width: 1092px) {
-  .servise-wrapper .servise-box .servise-text {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .navigation-container {
-    padding: 10px 10px 0 10px;
-  }
-  .navigation-inner .nav-item a {
-    font-size: 1.7rem;
-  }
-
-  .icon-twitter {
-    font-size: 1.5rem;
-  }
-
-  .servise-wrapper .servise-box .servise-text {
-    font-size: 1.5rem;
-  }
-
-  .servise {
-    height: 1200px;
-  }
-
-  .servise .servise-wrapper .servise-box {
-    display: block;
-    margin-top: 30px;
-  }
-
-  .blog {
-    height: 850px;
-  }
-
-  .pc-article-container {
-    display: none;
-  }
-
-  .sp-article-container {
-    display: block;
+  @charset "UTF-8";
+  .top-image {
+    display: inline-block;
     width: 100%;
-    height: 650px;
-    background-color: #fff;
-    margin-top: 30px;
+    height: 100%;
   }
-  .article-block-lg {
-    float: none;
-    height: 30%;
-    width: 100%
-  }
-
-  .footer-item {
-    display: inline;
-    margin-right: 30px;
-    font-size: 1.2rem;
-  }
-
-  .hidden {
+  
+  .top-image-sp{
     display: none;
   }
-}
 
-/*スマホのブレイクポイント*/
-
-@media (max-width: 415px) {
-
-  /*index.html*/
-  .header{
-    height: 810px;
-  }
-  .navigation-container{
-    display: none;
-  }
-  .navigation-inner {
-    display: none;
-  }
   .inner {
-    margin: 0 20px;
+    margin: 0 70px;
+    height: 100%;
   }
 
-  .logo {
-    padding-top: 20px;
+  .navigation-container {
+    background-color: #29BCBC;
+    padding: 20px 20px 0 20px;
+    margin-right: 10px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+  }
+
+  .navigation-logo {
+    display: inline;
   }
 
   .navigation-logo-intys {
-    width: 60px;
-    height: 30px;
-  }
-
-  .drawer {
-    display: block;
-  }
-
-  .servise-wrapper .servise-box .servise-text {
-    font-size: 1.5rem;
-  }
-
-  .servise {
-    height: 1200px;
-  }
-
-
-  .navigation {
-    display: none;
-  }
-
-  .servise .servise-wrapper .servise-box {
-    display: block;
-    margin-top: 50px;
-  }
-
-  .servise-box {
-    padding: 10px 0;
-  }
-
-  .works-title {
-    margin-bottom: 50px;
-  }
-
-  .works .portfolio-link {
-    width: 45%;
+    display: inline;
     height: 50px;
   }
 
-  .portfolio {
-    line-height: 50px;
-    font-size: 2.5rem;
+  .navigation-inner {
+    float: right;
+    margin-right: 50px;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin: 0 20px;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .nav-item a {
+    font-size: 3rem;
+  }
+
+  .fa-twitter {
+    content: '\f099';
+    font-family: 'FontAwesome 5 Brands';
+    font-weight: 900;
+  }
+
+  .icon-twitter {
+    font-size: 2rem;
+  }
+
+  .icon-twitter::before {
+    content: '\f099';
+    font-family: 'Font Awesome 5 Brands';
+  }
+
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+
+  }
+
+  .intys-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    display: block;
+    height: 80px;
+  }
+
+  .appear-box-border {
+    position: relative;
+  }
+
+  .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .section-title {
+    padding-top: 50px;
+    text-shadow: 1px 1px 10px black;
+  }
+
+  .hide-section-title {
+    display: none;
+  }
+
+  .servise-title,
+  .works-title,
+  .blog-title,
+  .contact-title {
+    font-size: 4rem;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .servise {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(#154A4A, #29BCBC);
+  }
+
+  .servise-wrapper {
+    display: table;
+    margin: 50px auto 0 auto;
+    border-collapse: separate;
+    border-spacing: 30px 5px;
+    table-layout: fixed;
+  }
+
+  .servise-box {
+    display: table-cell;
+    text-align: center;
+    padding: 100px 30px;
+  }
+
+  .servise-name {
+    font-size: 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: 20px;
+  }
+
+  .servise-text {
+    font-size: 1.7rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: 10px;
+  }
+
+  .servise-title {
+    padding-top: 30px;
+  }
+
+  .works-title {
+    padding-top: 30px;
+  }
+
+  .ajust-font {
+    letter-spacing: -5px;
+  }
+
+  .blog-title {
+    text-shadow: none;
+    padding-top: 30px;
+    color: #606060;
+  }
+
+  .works {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(#29BCBC, #FFF);
+  }
+
+  .works-inner {
+    text-align: center;
+    height: 100%;
+  }
+
+  .works-title {
+    text-align: left;
+    padding-top: 30px;
+    margin-bottom: 30px;
   }
 
   .portfolio {
@@ -451,8 +181,8 @@ index.htmlのクラス
     font-family: 'Crimson Text', serif;
     font-size: 3rem;
     margin: 0 auto 50px auto;
-    width: 200px;
-    height: 80px;
+    width: 350px;
+    height: 100px;
     position: relative;
     overflow: hidden;
   }
@@ -460,16 +190,16 @@ index.htmlのクラス
   .portfolio a {
     color: #fff;
     text-decoration: none;
-    line-height: 80px;
+    line-height: 100px;
     transition: all .5s ease;
     z-index: 2;
     position: relative;
   }
 
   .portfolio-eff {
-    width: 200px;
+    width: 350px;
     height: 100px;
-    left: -200px;
+    left: -350px;
     background: #fff;
     position: absolute;
     transition: all .5s ease;
@@ -485,10 +215,253 @@ index.htmlのクラス
   }
 
   .blog {
-    height: 1200px;
+    width: 100%;
+    height: 600px;
+    background-color: #FFF;
+  }
+
+  .blog-content {
+    margin-top: 25px;
+  }
+
+  .blog-card {
+    border: none;
+  }
+
+  .blog-card p {
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+  }
+
+  .blog-more-btn {
+    width: 85.5px;
+    height: 27px;
+    background-color: #606060;
+    margin: 11px auto 0 auto;
+    text-align: center;
+    line-height: 27px;
+  }
+
+  .contact {
+    height: 1000px;
+    background-color: #FFF;
+    color: #606060;
+
+  }
+
+  .contact-title {
+    color: #606060;
+    text-shadow: none;
+  }
+
+  .form-container {
+    margin-top: 20px;
+  }
+
+  .form-group {
+    margin: 15px auto 30px auto;
+    width:70%;
+  }
+
+  .form-group label {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.7rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    background-color: #77A0CD;
+  }
+
+  .btn-submit {
+    width: 136px;
+    height: 38px;
+    margin: 0 auto;
+    border: 1px solid #606060;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    line-height: 34px;
+  }
+
+  .btn {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    transition: all .5s ease;
+    z-index: 2;
+  }
+
+  .btn-submit-effect {
+    width: 136px;
+    height: 38px;
+    left: -136px;
+    position: absolute;
+    background: #34495e;
+    transition: all .5s ease;
+    z-index: 1;
+  }
+
+  .btn-submit:hover .btn-submit-effect {
+    left: 0;
+  }
+
+  .btn-submit:hover .btn {
+    color: #fff;
   }
 
 
+  /*小さめpcとタブレット用のブレイクポイント*/
+
+  @media (max-width: 1092px) {
+    .servise-wrapper .servise-box .servise-text {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .servise-wrapper .servise-box .servise-text {
+      font-size: 1.5rem;
+    }
+
+    .servise {
+      height: 1200px;
+    }
+
+    .servise .servise-wrapper .servise-box {
+      display: block;
+      margin-top: 30px;
+    }
+
+    .blog {
+      height: 850px;
+    }
+
+    .pc-article-container {
+      display: none;
+    }
+
+    .sp-article-container {
+      display: block;
+      width: 100%;
+      height: 650px;
+      background-color: #fff;
+      margin-top: 30px;
+    }
+    .article-block-lg {
+      float: none;
+      height: 30%;
+      width: 100%
+    }
+
+    .footer-item {
+      display: inline;
+      margin-right: 30px;
+      font-size: 1.2rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+
+  /*スマホのブレイクポイント*/
+
+  @media (max-width: 415px) {
+    .top-image {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .top-image-sp{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .servise-wrapper .servise-box .servise-text {
+      font-size: 1.5rem;
+    }
+
+    .servise {
+      height: 1500px;
+    }
 
 
-}
+    .navigation {
+      display: none;
+    }
+
+    .servise .servise-wrapper .servise-box {
+      display: block;
+      margin-top: 50px;
+    }
+
+    .servise-box {
+      padding: 10px 0;
+    }
+
+    .works-title {
+      margin-bottom: 50px;
+    }
+
+    .works .portfolio-link {
+      width: 45%;
+      height: 50px;
+    }
+
+    .portfolio {
+      line-height: 50px;
+      font-size: 2.5rem;
+    }
+
+    .portfolio {
+      background-color: #1C7AC1;
+      font-family: 'Crimson Text', serif;
+      font-size: 3rem;
+      margin: 0 auto 50px auto;
+      width: 200px;
+      height: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portfolio a {
+      color: #fff;
+      text-decoration: none;
+      line-height: 80px;
+      transition: all .5s ease;
+      z-index: 2;
+      position: relative;
+    }
+
+    .portfolio-eff {
+      width: 200px;
+      height: 100px;
+      left: -200px;
+      background: #fff;
+      position: absolute;
+      transition: all .5s ease;
+      z-index: 1;
+    }
+
+    .portfolio:hover .portfolio-eff {
+      left: 0;
+    }
+
+    .portfolio:hover a {
+      color: #1C7AC1;
+    }
+
+    .blog {
+      height: 1200px;
+    }
+    
+     .form-group{
+       width:90%;
+     }
+  }
+  
